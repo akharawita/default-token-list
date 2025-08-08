@@ -1,0 +1,12 @@
+name = "default-token-list"
+main = "src/worker.js"
+compatibility_date = "2025-08-08"
+
+[site]
+bucket = "./build"
+
+# Serve the token list at the root
+[[rules]]
+type = "Text"
+globs = ["**/*.json"]
+fallthrough = false
